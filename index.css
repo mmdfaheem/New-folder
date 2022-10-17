@@ -127,7 +127,8 @@ margin-top:1rem;
     text-decoration: none;
     color:black;
     margin-top:0.5rem;
-    font-size: small;
+    font-size: medium; 
+    
 }
 #link0:hover{
     color:royalblue;
