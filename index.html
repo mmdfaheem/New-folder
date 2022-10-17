@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #26baee;">
+
+
+
+    <div class="float">
+        <div class="div1">
+            <nav id="nav1" class="nav">
+
+                <a class="nav-link" href="index1.html">Home</a>
+                <a class="nav-link" href="index.html">Register</a>
+            </nav>
+        </div>
+        <div class="div2">
+            <br><br><br>
+           
+            <div class="div3">
+
+                <div class="heading">Sign Up</div>
+                <br>
+
+
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+    <label for="">First Name</label>
+                <input type="text" name="nam" id="" placeholder="First Name" required>
+                <label for="">Last Name</label>
+                <input type="text" name="name" id="" required placeholder="Last Name">
+                <label for="">Email</label>
+                <input type="email" name="" id="" required placeholder="Email">
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Password" id="" required>
+                <br>
+                <input class="a" type="submit" value="Submit">
+            </form>
+
+                <br>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function validateform() {
+            var name = document.myform.nam.value;
+            var nam = document.myform.name.value;
+            var password = document.myform.password.value;
+            var submit = document.myform.submit.value;
+
+            if (name == null || name == "") {
+                alert("First Name can't be blank");
+                return false;
+            } else if (name.length < 6) {
+                alert("First Name must be at least 6 characters long.");
+                return false;
+            }
+
+            if (nam == null || nam == "") {
+                alert("Last Name can't be blank");
+                return false;
+            } else if (nam.length < 6) {
+                alert("Last Name must be at least 6 characters long.");
+                return false;
+            }
+
+        }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body style="background-color: #26baee;">
+    <div class="color">
+        <div class="div1">
+            <nav id="nav1" class="nav">
+
+                <a class="nav-link" href="index1.html">Home</a>
+                <a class="nav-link" href="index.html">Register</a>
+            </nav>
+        </div> <br>
+
+        <div class="float">
+            <div class="div2">Log In</div>
+            <br>
+            <div class="div3">
+                <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+                    <label id="label1" for="">Name or Email </label>
+                    <br>
+
+                    <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name or Email"> -->
+
+
+                    <input type="text" name="name" id="" required placeholder="Name or Email"> <br>
+                    <label id="label2" for="">Password</label> <br>
+                    <input type="password" name="password" id="" required placeholder="Password">
+                    <br>
+                    <input class="sub" type="submit" name="Submit" value="Submit">
+                </form>
+                <div class="foot">
+                    <a href="">Forget password?</a>
+                    <a href="index.html">Create an account</a>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+            var submit = document.myform.submit.value;
+
+            if (name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (name.length < 6) {
+                alert("Name must be at least 6 characters long.");
+                return false;
+            }
+            if (password == null || password == "") {
+                alert("Password can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+            
+        }
+        
+    
+
+    
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
